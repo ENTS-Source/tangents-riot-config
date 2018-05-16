@@ -7,7 +7,8 @@
   "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
   "enableLabs": true,
   "features": {
-    "feature_pinning": "enabled"
+    "feature_pinning": "enable",
+    "feature_rich_quoting": "enable"
   },
   "roomDirectory": {
     "servers": [
