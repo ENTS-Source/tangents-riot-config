@@ -1,6 +1,7 @@
 {
   "default_hs_url": "https://tang.ents.ca",
   "default_is_url": "https://vector.im",
+  "disable_custom_urls": true,
   "brand": "Riot",
   "integrations_ui_url": "https://scalar.vector.im/",
   "integrations_rest_url": "https://scalar.vector.im/api",
@@ -9,11 +10,9 @@
     "https://scalar.vector.im/api"
   ],
   "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
-  "enableLabs": true,
   "features": {
     "feature_pinning": "enable",
-    "feature_rich_quoting": "enable",
-    "feature_lazyloading": "enable"
+    "feature_room_breadcrumbs": "labs"
   },
   "roomDirectory": {
     "servers": [
@@ -22,10 +21,48 @@
     ]
   },
   "piwik": {
-    "url": "https://piwik.riot.im/",
-    "siteId": 1
+      "url": "https://piwik.riot.im/",
+      "whitelistedHSUrls": ["https://matrix.org", "https://tang.ents.ca"],
+      "whitelistedISUrls": ["https://vector.im", "https://matrix.org"],
+      "siteId": 1
+  },
+  "enable_presence_by_hs_url": {
+      "https://matrix.org": false
   },
   "settingDefaults": {
     "TagPanel.disableTagPanel": true
-  }
+  },
+  "embeddedPages": {
+    "welcomeUrl": "ents-welcome.html",
+    "homeUrl": null
+  },
+  "branding": {
+    "authHeaderLogoUrl": "ents-img/crest.svg"
+  },
+  "terms_and_conditions_links": [
+    {
+      "url": "https://docum.ents.ca/ENTS%20Bylaws%20-%20Dec%202018.pdf",
+      "text": "Bylaws"
+    },
+    {
+      "url": "https://docum.ents.ca/ENTS%20Objects%20-%20Dec%202018.pdf",
+      "text": "Objects of the Society"
+    },
+    {
+      "url": "https://docum.ents.ca/GeneralPolicies-October2018.pdf",
+      "text": "General Policies"
+    },
+    {
+      "url": "https://docum.ents.ca/CodeOfConduct.pdf",
+      "text": "Code of Conduct"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/0B9lvuCjZufm6cVVJUDFJWnJibms?usp=sharing",
+      "text": "Meeting Minutes"
+    },
+    {
+      "url": "https://docum.ents.ca/",
+      "text": "Society Documents"
+    }
+  ]
 }
