@@ -12,6 +12,11 @@
   "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
   "features": {
     "feature_pinning": "enable",
+    "feature_custom_status": "labs",
+    "feature_custom_tags": "labs",
+    "feature_state_counters": "enable",
+    "feature_message_editing": "labs",
+    "feature_reactions": "labs",
     "feature_room_breadcrumbs": "labs"
   },
   "roomDirectory": {
